@@ -20,16 +20,17 @@ public class Ejercicio2 {
 
         // Calcular el promedio de 3 numeros
         int a,b,c,promedio;
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Dame el numero 1: ");
-        a = scan.nextInt();
-        System.out.println("Dame el numero 2: ");
-        b = scan.nextInt();
-        System.out.println("Dame el numero 3: ");
-        c = scan.nextInt();
-        promedio = (a+b+c)/3;
-        System.out.println("El promedio de los 3 numeros es: " + promedio);
-        scan.close();
+
+        try (Scanner scan = new Scanner(System.in);) {
+            System.out.println("Dame el numero 1: ");
+            a = scan.nextInt();
+            System.out.println("Dame el numero 2: ");
+            b = scan.nextInt();
+            System.out.println("Dame el numero 3: ");
+            c = scan.nextInt();
+            promedio = (a+b+c)/3;
+            System.out.println("El promedio de los 3 numeros es: " + promedio);
+        }
     }
     
 }

@@ -20,14 +20,13 @@ public class Ejercicio3 {
 
         // Calcular el indice de masa corporal
         double a,b,indice;
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Dame tu peso en Kg: ");
-        a = scan.nextFloat();
-        System.out.println("Dame tu estatura en m: ");
-        b = scan.nextFloat();
-        indice = a / (b * b);
-        System.out.println("Tu IMC es: " + indice);
-        scan.close();
+        try (Scanner scan = new Scanner(System.in);){
+            System.out.println("Dame tu peso en Kg: ");
+            a = scan.nextFloat();
+            System.out.println("Dame tu estatura en m: ");
+            b = scan.nextFloat();
+            indice = a / (b * b);
+            System.out.println("Tu IMC es: " + indice);
+        }
     }
-    
 }
