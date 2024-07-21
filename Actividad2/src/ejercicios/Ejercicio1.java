@@ -15,8 +15,6 @@ public class Ejercicio1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-
         // Calcular el area de un rectangulo 
         double a,b,area;
         try (Scanner scan = new Scanner(System.in);){

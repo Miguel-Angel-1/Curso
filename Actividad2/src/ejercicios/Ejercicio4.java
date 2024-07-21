@@ -17,8 +17,6 @@ public class Ejercicio4 {
      */
     
     public static void main(String[] args) {
-        // TODO code application logic here
-
         //Calcular salario neto de un empleado
         double salarioBruto, porcentajeImpuestos, deduccionesAdicionales, salarioNeto, impuesto;
         try(Scanner scan = new Scanner(System.in);){
