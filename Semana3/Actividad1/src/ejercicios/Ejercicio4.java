@@ -4,10 +4,22 @@
  */
 package ejercicios;
 
+import java.util.*;
+
 /**
  *
  * @author raul
  */
 public class Ejercicio4 {
-    
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Escriba una palabra(Ingrese un espacio para terminar): ");
+        String palabra = scan.nextLine();
+        while (!palabra.equals(" ")){
+            System.out.println("Escriba una palabra(Escriba un espacio para terminar): ");
+            palabra = scan.nextLine();
+            System.out.println("Palabra ingresada: "+ palabra.toUpperCase());
+        }
+        scan.close();
+    }    
 }
